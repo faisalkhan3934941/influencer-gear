@@ -1,0 +1,133 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+.m-title{
+    margin-top: 70px;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.title{
+    font-size: 2.75rem;
+}
+.btn{
+    background: #E02C6D;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 30px;
+    border: 0;
+    margin-top: 10px;
+}
+.image{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    margin-right: 250px;
+}
+.logo{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 150px;
+}
+.pic{
+    padding: 40px;
+}
+.description-title{
+    text-align: center;
+    margin-top: 150px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 0px 300px;
+}
+.picture{
+    border: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.photo{
+    width: 100%;
+}
+.section{
+    display: flex;
+    margin: 200px 300px;
+    gap: 200px;
+}
+.btn-m{
+    background: #E02C6D;
+    color: #FFFFFF;
+    padding: 15px;
+    border: 0;
+    margin-top: 10px;
+}
+footer{
+    background: black;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px;
+}
+.foot{
+    padding-left: 20px;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    nav{
+        display: none;
+    }
+    .hero,
+    .header,
+    .section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .m-title,
+    .image,
+    .logo,
+    .btn,
+    .description-title,
+    .banner,
+    .header,
+    .hero,
+    .pic,
+    .title,
+    .section{
+        margin: 0px;
+    }
+    .image{
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 2px;
+    }
+}
